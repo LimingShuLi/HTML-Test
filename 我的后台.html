@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的后台</title>
+  </head>
+  <style>
+    .back {
+      background-color: rgb(238, 248, 183);
+      box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.298);
+    }
+    .flex {
+      display: flex;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .mg {
+      margin: 8px;
+    }
+    .mgl {
+      margin-right: 8px;
+    }
+    .mgt {
+      margin-top: 8px;
+    }
+    @media (max-width: 600px) {
+      .cebian {
+        display: none;
+      }
+      .nei {
+        flex-direction: column;
+      }
+      .wai {
+        margin-left: 8px;
+      }
+      .xia {
+        margin-bottom: 8px;
+      }
+    }
+  </style>
+  <body style="display: flex; flex-direction: row; margin: 0; height: 100vh">
+    <div style="width: 200px; z-index: 2" class="back cebian"></div>
+    <div style="flex: 1; flex-direction: column" class="flex">
+      <div style="height: 80px; z-index: 1" class="back"></div>
+      <div style="overflow: auto">
+        <div class="flex flex1 nei">
+          <div style="flex: 3; flex-direction: column" class="flex mg">
+            <div class="flex" style="height: 100px">
+              <div class="back flex1 mgl"></div>
+              <div class="back flex1 mgl"></div>
+              <div class="back flex1 mgl"></div>
+              <div class="back flex1"></div>
+            </div>
+            <div class="flex back mgt" style="height: 200px"></div>
+            <div class="flex back mgt" style="height: 200px"></div>
+            <div class="flex back mgt" style="height: 200px"></div>
+            <div class="flex back mgt" style="height: 200px"></div>
+            <div class="flex back mgt" style="height: 200px"></div>
+            <div class="flex back mgt" style="height: 200px"></div>
+          </div>
+          <div style="flex: 1; flex-direction: column" class="flex mgl wai">
+            <div style="height: 150px" class="flex back mgt"></div>
+            <div style="height: 300px" class="flex back mgt xia"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
